@@ -160,6 +160,10 @@
         justify-content: center;
         align-items: center;
     }
+    .footer #footer_logo {
+        /* width: 100px; */
+        margin-bottom: 70px;
+    }
 
 
 
