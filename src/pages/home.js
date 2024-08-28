@@ -81,17 +81,37 @@ const Home = () => {
                 <Banner />
                 {/* =======================who we are=================== */}
                 <div className="whoWeAre">
-                    <svg width="1408" height="739" viewBox="0 0 1408 739" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
-                        position: "absolute",
-                        top: -17,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        zIndex: 2,
-                        display: isVerySmallScreen ? 'none' : 'block'
-                    }}>
-                        <path d="M-15 -5.87697e-05H1429V259.842V504.785C1429 504.785 1180.2 -28.0107 820.393 195.746C820.393 195.746 785.636 203.821 595.533 401.324C387.068 651.989 328.919 698.209 252.957 727.546C203.655 740.316 143.959 745.131 86.782 727.546C26.1469 708.897 22.6014 706.584 5.55695 698.209C-11.4875 689.834 -14.9999 698.209 -15 654.791C-15.0001 611.373 -13.9421 4.76936 -15 -5.87697e-05Z" fill="#F1F5F9" />
+                    {/* ---------1st */}
+
+                    <svg
+                        width="100%"   // Ensures the SVG takes up the full width of its container
+                        height="auto"  // Automatically adjusts height based on width to maintain aspect ratio
+                        viewBox="0 0 1408 739"  // Defines the coordinate system and aspect ratio
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{
+                            position: "absolute",  // Positions the SVG absolutely within its container
+                            top: "0",  // Adjust based on your layout
+                            left: "0",  // Aligns the SVG to the left
+                            zIndex: 2,  // Ensures the SVG is on top of other elements
+                            display: isVerySmallScreen ? 'none' : 'block',  // Hides the SVG on very small screens
+                            maxWidth: "150%",  // Increase the maximum width of the SVG
+                            height: "auto",  // Maintains aspect ratio by adjusting height
+                            overflow: "hidden",  // Ensures no overflow from the SVG
+                        }}
+                        preserveAspectRatio="xMidYMid meet"  // Keeps the SVG centered and maintains its aspect ratio
+                    >
+                        <path
+                            d="M-15 -5.87697e-05H1429V259.842V504.785C1429 504.785 1180.2 -28.0107 820.393 195.746C820.393 195.746 785.636 203.821 595.533 401.324C387.068 651.989 328.919 698.209 252.957 727.546C203.655 740.316 143.959 745.131 86.782 727.546C26.1469 708.897 22.6014 706.584 5.55695 698.209C-11.4875 689.834 -14.9999 698.209 -15 654.791C-15.0001 611.373 -13.9421 4.76936 -15 -5.87697e-05Z"
+                            fill="#F1F5F9"
+                        />
                     </svg>
+
+
+
+
+
+
 
                     <div className="textContent">
                         <p className="title">Who We Are</p>
@@ -125,17 +145,29 @@ const Home = () => {
                             skill levels.
                         </p>
                     </div>
-                    <svg width="1408" height="739" viewBox="0 0 1408 739" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
-                        position: "absolute",
-                        bottom: -17,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        zIndex: 2,
-                        display: isVerySmallScreen ? 'none' : 'block'
-                    }}>
+                    {/* ---2nd */}
+                    <svg
+                        width="100%"   //-- Ensures the SVG takes up the full width of its container -->
+                        height="auto"  //</div>!-- Automatically adjusts the height based on the width to maintain aspect ratio -->
+                        viewBox="0 0 1408 650"  //<!-- Defines the coordinate system of the SVG -->
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{
+                            position: "absolute",  //< !--Positions the SVG absolutely within its container -->
+                            bottom: "-17px",  //<!-- Adjusts the bottom positioning -->
+                            left: "0",  //<!-- Aligns the SVG to the left -->
+                            zIndex: 2,  //<!-- Ensures the SVG is on top of other elements -->
+                            display: isVerySmallScreen ? 'none' : 'block',  //<!-- Hides the SVG on very small screens -->
+                            maxWidth: "100%",  //<!-- Prevents the SVG from exceeding its container's width -->
+                            height: "auto",  //<!-- Makes the height responsive -->
+                        }}
+                        preserveAspectRatio="xMinYMin meet"  //<!-- Scales the SVG while keeping its aspect ratio -->
+                    >
                         <path d="M1423 739H-21V479.158C-21 479.158 227.797 767.011 587.607 543.254C587.607 543.254 622.364 535.179 812.467 337.676C1020.93 87.0111 1079.08 40.7909 1155.04 11.4543C1204.35 -1.31635 1264.04 -6.1311 1321.22 11.4543C1381.85 30.1034 1385.4 32.4157 1402.44 40.791C1419.49 49.1662 1423 40.7909 1423 84.2089C1423 127.627 1421.94 734.231 1423 739Z" fill="#F1F5F9" />
                     </svg>
+
+
+
 
                 </div>
                 {/* =========================counter===================== */}
@@ -591,16 +623,29 @@ const Home = () => {
                             <button id="submitButton">submit</button>
                         </div>
                     </div>
-
-                    <svg width="1408" height="284" viewBox="0 0 1408 284" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
-                        position: "absolute",
-                        bottom: -50,
-                        display: isVerySmallScreen ? 'none' : 'block',
-                        left: 0,
-                        width: "100%",
-                    }}>
-                        <path d="M1426 283.022C862.925 283.022 547.232 283.022 -15.8428 283.022V211.28C-15.8428 211.28 -16 101.09 344 211.28C704 321.47 1265.12 -56.4574 1426 8.53455V242.833V283.022Z" fill="#475569" />
+                    {/* ------3rd */}
+                    <svg
+                        width="100%"
+                        height="auto"
+                        viewBox="0 0 1408 284"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style={{
+                            position: "absolute",
+                            bottom: "-50px",
+                            left: 0,
+                            display: isVerySmallScreen ? 'none' : 'block',
+                            maxWidth: "100%",  // Ensures the SVG doesn't exceed its container width
+                            height: "auto",  // Makes the height responsive
+                            preserveAspectRatio: "xMidYMid meet",  // Ensures the SVG scales proportionally
+                        }}
+                    >
+                        <path
+                            d="M1426 283.022C862.925 283.022 547.232 283.022 -15.8428 283.022V211.28C-15.8428 211.28 -16 101.09 344 211.28C704 321.47 1265.12 -56.4574 1426 8.53455V242.833V283.022Z"
+                            fill="#475569"
+                        />
                     </svg>
+
 
                 </div>
 
@@ -610,7 +655,7 @@ const Home = () => {
 
 
 
-            </div>
+            </div >
 
         </>
     );
