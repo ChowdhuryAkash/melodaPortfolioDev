@@ -1416,15 +1416,11 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
         width: 90%;
         padding: 20px;
     }
-    .contactUs .form .inputs .nameandmails{
-        width: 90%;
-        font-size: 24px;
-    }
     .contactUs .form .subTitle{
         font-size: 14px;
     }
     .contactUs .form .inputs .nameandmails{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
     }
