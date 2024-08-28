@@ -1367,13 +1367,19 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .aboutOurTeachers .title{
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .aboutOurTeachers .mainAboutOurTeachers {
-        width: 400px;
+        width: 360px;
         height: auto;
         /* background-color: #000; */
     }
     .aboutOurTeachers .teacher{
-        width: 360px;
+        width: 320px;
     }
 
 
@@ -1386,11 +1392,18 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
     .whatStudentsSay .mainWhatStudentsSay{
         display: block;
         margin: auto;
+        padding: 20px 0;
     }
     .whatStudentsSay .student{
         width: 300px;
         margin:20px auto;
         
+    }
+    .whatStudentsSay .title{        
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     /* =======contact us========= */
@@ -1403,7 +1416,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
         width: 90%;
         padding: 20px;
     }
-    .contactUs .form .title{
+    .contactUs .form .inputs .nameandmails{
+        width: 90%;
         font-size: 24px;
     }
     .contactUs .form .subTitle{
