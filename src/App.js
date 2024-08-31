@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
-import Home from "./pages/Home";
-import Career from "./pages/Career";
-import Blog from "./pages/Blog";
-import About from "./pages/About";
+import Home from "./pages/Home.js";
+import Career from "./pages/Career.js";
+import Blog from "./pages/Blog.js";
+import About from "./pages/About.js";
 
 
 function App() {
