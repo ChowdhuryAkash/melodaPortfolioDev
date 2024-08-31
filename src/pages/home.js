@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import YouTube from 'react-youtube';
 
-import Footer from '../components/footer';
-import Banner from '../components/banner';
+import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 // import css
 import '../css/home.css';
 import Carousel from 'react-multi-carousel';
@@ -12,6 +12,15 @@ import CountUp from 'react-countup';
 const Home = () => {
     const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
     const isVerySmallScreen = window.matchMedia("(max-width: 480px)").matches;
+    useEffect(() => {
+        // Check if the URL contains a hash
+        if (window.location.hash === '#support') {
+            const supportElement = document.getElementById('submitButton');
+            if (supportElement) {
+                supportElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
     const carouselResponsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -76,9 +85,8 @@ const Home = () => {
     }, []);
 
     return (
-        <>
             <div className="main">
-                <Banner />
+                <Banner route="Home" />
                 {/* =======================who we are=================== */}
                 <div className="whoWeAre">
                     {/* ---------1st */}
@@ -600,7 +608,7 @@ const Home = () => {
                 {/* ==============contact us============ */}
                 <div className="contactUs" id="contact">
 
-                    <div className="form">
+                    <div className="form" id="form">
                         <p className="title">Contact Us</p>
                         <p className="subTitle">For further questions, including partnership opportunities, please email hello@creative-
                             tim.com or contact using our contact form.</p>
@@ -656,8 +664,6 @@ const Home = () => {
 
 
             </div >
-
-        </>
     );
 };
 export default Home;
