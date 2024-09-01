@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './footer.css';
 
 function Footer() {
@@ -8,11 +9,11 @@ function Footer() {
                 <div className='footerTopCol' id="footerTopColLogo">
                     <ul className='footerMenu'>
                         <li className='footerMenuItem'>
-                            <a href='index.html' style={{
+                            <Link to="/" style={{
                             }}>
                                 <img src={require('../images/white_logo.png')} alt='logo' id="footer_logo" />
 
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
@@ -20,24 +21,39 @@ function Footer() {
                 <div className='footerTopCol'>
                     <ul className='footerMenu'>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Brain Storming</a>
+                            <Link to="/Courses">Courses</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Ideation</a>
+                            <Link to="/Blog">Blog</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Ideation</a>
+                            <Link to="/Support">Support</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Ideation</a>
+                            <Link to="/Career">Career</Link>
                         </li>
 
                     </ul>
                 </div>
                 <div className='footerTopCol'>
+                    <ul className='footerMenu'>
+                        <li className='footerMenuItem'>
+                            <a href='https://www.instagram.com/melodahouse/'    target="_blank" 
+                             >Links</a>
+                        </li>
+                        <li className='footerMenuItem'>
+                            <a href='https://www.facebook.com/profile.php?id=61564278136131' target="_blank" >Facebook</a>
+                        </li>
+                        <li className='footerMenuItem'>
+                            <a href='https://www.instagram.com/melodahouse/' target="_blank" >Instagram</a>
+                        </li>
+
+                    </ul>
+                </div>
+                {/* <div className='footerTopCol'>
                     <ul className='footerMenu'>
                         <li className='footerMenuItem'>
                             <a href='index.html'>Courses</a>
@@ -56,43 +72,45 @@ function Footer() {
                         </li>
 
                     </ul>
-                </div>
+                </div> */}
                 <div className='footerTopCol'>
                     <ul className='footerMenu'>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Support</a>
+                        <Link to="/#support">Support</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Contact us</a>
+                            <a href='
+                            mailto:melodaofficials@gmail.com
+                            '>Send E-Mail</a>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Developers</a>
+                            <a href='Developers'>Developers</a>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Documentation</a>
+                            <a href='https://www.linkedin.com/in/akash-chowdhury-2b2330249/'>Contact with Team Lead(Developer)</a>
                         </li>
-                        <li className='footerMenuItem'>
+                        {/* <li className='footerMenuItem'>
                             <a href='index.html'>Integrations</a>
-                        </li>
+                        </li> */}
 
                     </ul>
                 </div>
                 <div className='footerTopCol'>
                     <ul className='footerMenu'>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Company</a>
+                            <a href='https://melodahouse.com' target="_blank" >Company</a>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>About</a>
+                            <Link to="/About">About</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Press</a>
+                            <Link to="/Blog">Blogs</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Events</a>
+                            <Link to="/Career">Career</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='index.html'>Request demo</a>
+                            <Link to="/Trial">Request demo</Link>
                         </li>
 
                     </ul>
@@ -106,14 +124,14 @@ function Footer() {
                 <div className='footerBottomRight'>
                     <ul className='footerBottomMenu'>
                         <li className='footerBottomMenuItem'>
-                            <a href='index.html'>Terms</a>
+                            <a href='index.html'>Terms and Conditions</a>
                         </li>
                         <li className='footerBottomMenuItem'>
-                            <a href='index.html'>Privacy</a>
+                            <a href='index.html'>Privacy Policy</a>
                         </li>
-                        <li className='footerBottomMenuItem'>
+                        {/* <li className='footerBottomMenuItem'>
                             <a href='index.html'>Contact</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

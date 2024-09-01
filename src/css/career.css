@@ -92,7 +92,7 @@
 
 .howItWorks .step {
     width: 25%;
-    height: auto;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;

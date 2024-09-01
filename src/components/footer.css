@@ -61,7 +61,6 @@
     font-weight: 100;
     font-family: sans-serif;
     border-bottom: 1px solid transparent;
-    text-align: left;
 }
 
 .footer .footerTop .footerMenu .footerMenuItem:first-child a {
@@ -100,13 +99,14 @@
 }
 
 .footerBottomRight .footerBottomMenu {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 5px
+    padding: 5px;
+    /* background-color: #000; */
 }
 
 .footerBottomRight .footerBottomMenu li {

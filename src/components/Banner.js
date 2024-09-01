@@ -1,48 +1,51 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import "./banner.css";
 
-function Banner({route}) {
+function Banner({ route }) {
 
-    var title="Where Every Note Finds a Home";
-    var subTitle="Learn, Play, and Create with Meloda House";
+    var title = "Where Every Note Finds a Home";
+    var subTitle = "Learn, Play, and Create with Meloda House";
     var bannerImage = require("../images/banner-home.png");
 
-    switch(route){
+    switch (route) {
         case "Home":
-            title="Where Every Note Finds a Home";
-            subTitle="Learn, Play, and Create with Meloda House";
+            title = "Where Every Note Finds a Home";
+            subTitle = "Learn, Play, and Create with Meloda House";
             bannerImage = require("../images/banner-home.png");
             break;
         case "Blog":
-            title="Choose Your Path, Master Your Craft";
-            subTitle="Select Your Course at Meloda House.";
+            title = "Harmonize Your Journey, Master Your Craft";
+            subTitle = "Discover Insights and Stories at Meloda House";
             bannerImage = require("../images/banner-blog.png");
             break;
         case "Career":
-            title="Career Guidance: Spread Your Rhythm with Meloda House";
-            subTitle="Learn Tabla and Let the Beats Speak.";
+            title = "Spread Your Rhythm with Meloda House.";
+            subTitle = "Build a Musical Career with Meloda House";
             bannerImage = require("../images/banner-career.png");
             break;
         case "Support":
-            title="Support";
-            subTitle="We are here to help you";
+            title = "Support";
+            subTitle = "We are here to help you";
             bannerImage = require("../images/banner-home.png");
             break;
-            case "About":
-            title="Discover the Heartbeat of Music";
-            subTitle="Learn, Grow, and Create with Meloda House.";
+        case "About":
+            title = "Discover the Heartbeat of Music";
+            subTitle = "Learn, Grow, and Create with Meloda House.";
             bannerImage = require("../images/banner-about.png");
             break;
         default:
-            title="Where Every Note Finds a Home";
-            subTitle="Learn, Play, and Create with Meloda House";
+            title = "Where Every Note Finds a Home";
+            subTitle = "Learn, Play, and Create with Meloda House";
             bannerImage = require("../images/banner-home.png");
     }
 
     return (
-        <div className="banner"  style={{
-            backgroundImage: `url(${bannerImage})`
-        }}>
+        <div className="banner" style={{
+            backgroundImage: `url(${bannerImage})`,
+            backgroundColor: (route!="Home" && route!="Courses") ? "rgba(0,0,0,0.5)" : "transparent",
+            backgroundBlendMode: (route!="Home" && route!="Courses") ? "multiply" : "unset"
+}}>
             <div className="nav">
                 <Link to="/" className="logo">
                     <img src=
@@ -55,7 +58,7 @@ function Banner({route}) {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/">Courses</Link>
+                        <Link to="/Courses">Courses</Link>
                     </li>
                     <li>
                         <Link to="/Blog">Blog</Link>
@@ -66,14 +69,14 @@ function Banner({route}) {
                     <li>
                         <Link to="/Career">Career</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="contact.html" id="loginButton">
                             Login
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <Link to="/" id="bookFreeButton">
-                            Book free trail
+                        <Link to="/Trial" id="bookFreeButton">
+                            Book free trial
                         </Link>
                     </li>
                 </ul>
@@ -83,11 +86,11 @@ function Banner({route}) {
                 <p className="subTitle">{
                     subTitle                    
                     }</p>
-                <a href="contact.html" id="bookFreeTrialButton">
-                    Book free trail
-                </a>
+                {
+                    route!="Career" ? <Link to="/Trial" id="bookFreeTrialButton">book free trial</Link> : null
+                }
             </div>
-        </div>
+        </div >
     )
 }
 export default Banner;

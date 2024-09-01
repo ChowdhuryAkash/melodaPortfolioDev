@@ -10,6 +10,7 @@
 }
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +31,10 @@
 }
 
 .nav .menu {
-    width: 50%;
+    /* width: 50%; */
+    max-width: 80%;
     height: auto;
+    /* width: auto; */
     /* background-color: #0f0; */
     align-items: center;
     display: flex;
@@ -41,7 +44,7 @@
 }
 
 .nav .menu li {
-    padding: 0 10px;
+    padding: 0 15px;
     justify-self: unset;
     /* background-color: #f00; */
     height: 40px;

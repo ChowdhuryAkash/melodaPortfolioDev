@@ -6,6 +6,9 @@ import Home from "./pages/Home.js";
 import Career from "./pages/Career.js";
 import Blog from "./pages/Blog.js";
 import About from "./pages/About.js";
+import Trial from "./pages/Trial.js";
+import Courses from "./pages/Courses.js";
+import Course from "./pages/Course.js";
 
 
 function App() {
@@ -18,10 +21,15 @@ function App() {
         <Route path="/Career" element={<Career />}></Route>
         <Route path="/About" element={<About />}></Route>
         <Route path="/Support" element={<Navigate to="/#support" replace />} />
+        <Route path="/Trial" element={<Trial />}></Route>
+        <Route path="/Courses" element={<Courses />}></Route>
+        <Route path="/Course" element={<Course />}></Route>
+
 
         
       </Routes>
     </BrowserRouter>
+    // <Trial />
 
   );
 }
