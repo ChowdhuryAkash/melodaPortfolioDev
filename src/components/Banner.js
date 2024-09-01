@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./banner.css";
-
 function Banner({ route }) {
+
+    const [showResponsiveNav, setShowResponsiveNav] = useState(false);
 
     var title = "Where Every Note Finds a Home";
     var subTitle = "Learn, Play, and Create with Meloda House";
@@ -43,9 +44,9 @@ function Banner({ route }) {
     return (
         <div className="banner" style={{
             backgroundImage: `url(${bannerImage})`,
-            backgroundColor: (route!="Home" && route!="Courses") ? "rgba(0,0,0,0.5)" : "transparent",
-            backgroundBlendMode: (route!="Home" && route!="Courses") ? "multiply" : "unset"
-}}>
+            backgroundColor: (route != "Home" && route != "Courses") ? "rgba(0,0,0,0.5)" : "transparent",
+            backgroundBlendMode: (route != "Home" && route != "Courses") ? "multiply" : "unset"
+        }}>
             <div className="nav">
                 <Link to="/" className="logo">
                     <img src=
@@ -80,16 +81,63 @@ function Banner({ route }) {
                         </Link>
                     </li>
                 </ul>
+                <img
+                    src={require("../images/responsive_nav_threedot.png")}
+                    id="responsive_nav_threedot"
+                    alt="menu"
+                    onClick={() => {
+                        setShowResponsiveNav(true);
+                    }}
+                />
+
             </div>
+
             <div className="textContent">
                 <p className="title">{title}</p>
                 <p className="subTitle">{
-                    subTitle                    
-                    }</p>
+                    subTitle
+                }</p>
                 {
-                    route!="Career" ? <Link to="/Trial" id="bookFreeTrialButton">book free trial</Link> : null
+                    route != "Career" ? <Link to="/Trial" id="bookFreeTrialButton">book free trial</Link> : null
                 }
             </div>
+            {
+                showResponsiveNav ?
+                <div class="responsiveNav">
+                <div class="responsiveNavTop">
+                <Link to="/">
+                    <img src=
+                        {require("../images/white_logo.png")}
+                        id="responsiveNavLogo"
+                        alt="banner" />
+                </Link>
+                <img src={require("../images/cancel.png")} id="responsiveNavClose" alt="close" onClick={()=>{
+                    setShowResponsiveNav(false);
+                }} />
+
+                </div>
+                <ul class="responsiveMenu">
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/Courses">Courses</Link>
+                    </li>
+                    <li>
+                        <Link to="/Blog">Blog</Link>
+                    </li>
+                    <li>
+                        <Link to="/Support">Support</Link>
+                    </li>
+                    <li>
+                        <Link to="/Career">Career</Link>
+                    </li>
+                    <li>
+                        <Link to="/Trial" id="responsiveNavBookFreeTrialButton">Book Free Trial</Link>
+                    </li>
+                </ul>
+            </div> : null
+            }
         </div >
     )
 }

@@ -42,6 +42,11 @@
     list-style: none;
     padding: 5px
 }
+#responsive_nav_threedot{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
 
 .nav .menu li {
     padding: 0 15px;
@@ -103,6 +108,70 @@
     transition: 0.5s;
 }
 
+.banner .responsiveNav{
+    display: block;
+    margin-left: auto;
+    width: 90%;
+    height: auto;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.3);
+}
+.banner .responsiveNav .responsiveNavTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.banner .responsiveNav .responsiveNavTop #responsiveNavLogo{
+    width: 100px;
+    
+    filter: invert(100%) brightness(0%);
+}
+.banner .responsiveNav .responsiveNavTop #responsiveNavClose{
+    width: 25px;
+}
+.banner .responsiveNav .responsiveMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    list-style: none;
+}
+.banner .responsiveNav .responsiveMenu li{
+    padding: 10px 0;
+}
+.banner .responsiveNav .responsiveMenu li a{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.banner .responsiveNav .responsiveMenu li a:hover{
+    color: #000;
+    transition: 0.5s;
+}
+#responsiveNavBookFreeTrialButton{
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    border-radius: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
 .banner .textContent {
     display: block;
     width: 55%;
@@ -158,12 +227,22 @@
         /* background-color: #D2D6DA; */
         background-size: cover;
         background-position: center;
-        padding-top: 100px;
+        padding-top: 0px;
         padding-left: 20px;
     }
     .banner .nav{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .banner .menu{
         display: none;
     }
+    #responsive_nav_threedot {
+        display: block;
+        filter: invert(100%) brightness(200%);
+        /* The filter inverts the colors, making black white, and then increases brightness to ensure white remains white */
+    }
+    
     .banner .textContent{
         width: 100%;
         padding: 0 20px;

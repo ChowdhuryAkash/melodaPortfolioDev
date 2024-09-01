@@ -1082,38 +1082,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 
     /* =====banner========= */
-    .banner{
-        height: 50vh;
-        /* background-image: url(../images/Shape.png); */
-        /* background-color: #D2D6DA; */
-        background-size: cover;
-        background-position: center;
-        padding-top: 100px;
-        padding-left: 20px;
-    }
-    .banner .nav{
-        display: none;
-    }
-    .banner .textContent{
-        width: 100%;
-        padding: 0 20px;
-    }
-    .banner .textContent .title{
-        font-size: 25px;
-        text-align: left;
-        width: 100%;
-    }
-    .banner .textContent .subTitle{
-        font-size: 15px;
-        text-align: left;
-        width: 100%;
-    }
-    #bookFreeTrialButton {   
-        font-size: 16px;
-        width: 130px;
-        line-height: 15px;
-        margin-top: 20px;
-    }
+    
 
     /* ================who we are======= */
     .whoWeAre {
