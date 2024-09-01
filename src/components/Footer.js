@@ -84,7 +84,7 @@ function Footer() {
                             '>Send E-Mail</a>
                         </li>
                         <li className='footerMenuItem'>
-                            <a href='Developers'>Developers</a>
+                            <Link to="/Developers">Developers</Link>
                         </li>
                         <li className='footerMenuItem'>
                             <a href='https://www.linkedin.com/in/akash-chowdhury-2b2330249/'>Contact with Team Lead(Developer)</a>
@@ -124,10 +124,10 @@ function Footer() {
                 <div className='footerBottomRight'>
                     <ul className='footerBottomMenu'>
                         <li className='footerBottomMenuItem'>
-                            <a href='index.html'>Terms and Conditions</a>
+                            <Link to="/Termsandcondition">Terms and Conditions</Link>
                         </li>
                         <li className='footerBottomMenuItem'>
-                            <a href='index.html'>Privacy Policy</a>
+                            <Link to="/Privecyandpolicy">Privacy Policy</Link>
                         </li>
                         {/* <li className='footerBottomMenuItem'>
                             <a href='index.html'>Contact</a>
