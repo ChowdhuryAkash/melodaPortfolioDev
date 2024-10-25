@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { Outlet, Link } from "react-router-dom";
 import YouTube from 'react-youtube';
 import { db, storage } from '../Firebase/FirebaseConfig'
 import { addDoc, collection } from "firebase/firestore";
@@ -328,41 +329,44 @@ const Home = () => {
                                     <p className="courseDescription">
                                         Learn to play the guitar with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="courseButton">
+                                    {/* <a href="about.html" className="courseButton">
                                         Learn More
-                                    </a>
+                                    </a> */}
+                                    <Link to="/Courses" className="courseButton">
+                                        Learn More
+                                    </Link>
                                 </div>
                             </div>
                             <div className="course">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/piano.jpg")}
                                     className="courseImage"
                                     alt="guitar"
                                 />
                                 <div className="right">
-                                    <p className="courseName">Guitar</p>
+                                    <p className="courseName">Piano</p>
                                     <p className="courseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to play the piano with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="courseButton">
+                                    <Link to="/Courses" className="courseButton">
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="course">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/tabla.png")}
                                     className="courseImage"
                                     alt="guitar"
                                 />
                                 <div className="right">
-                                    <p className="courseName">Guitar</p>
+                                    <p className="courseName">Tabla</p>
                                     <p className="courseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to play the tabla with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="courseButton">
+                                    <Link to="/Courses" className="courseButton">
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -372,21 +376,37 @@ const Home = () => {
                         <div className="coursesList">
                             <div className="course">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/hindustanVocal.webp")}
                                     className="courseImage"
                                     alt="guitar"
                                 />
                                 <div className="right">
-                                    <p className="courseName">Guitar</p>
+                                    <p className="courseName">Hindustan Vocal</p>
                                     <p className="courseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to sing the Hindustani Vocal with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="courseButton">
+                                    <Link to="/Courses" className="courseButton">
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="course">
+                                <img
+                                    src={require("../images/bollywoodvocal.jpg")}
+                                    className="courseImage"
+                                    alt="guitar"
+                                />
+                                <div className="right">
+                                    <p className="courseName">Bollywood Vocal</p>
+                                    <p className="courseDescription">
+                                        Learn to sing the Bollywood Vocal with our expert instructors.
+                                    </p>
+                                    <Link to="/Courses" className="courseButton">
+                                        Learn More
+                                    </Link>
+                                </div>
+                            </div>
+                            {/* <div className="course">
                                 <img
                                     src={require("../images/guitarCourse.png")}
                                     className="courseImage"
@@ -397,27 +417,11 @@ const Home = () => {
                                     <p className="courseDescription">
                                         Learn to play the guitar with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="courseButton">
+                                    <Link to="/Courses" className="courseButton">
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
-                            </div>
-                            <div className="course">
-                                <img
-                                    src={require("../images/guitarCourse.png")}
-                                    className="courseImage"
-                                    alt="guitar"
-                                />
-                                <div className="right">
-                                    <p className="courseName">Guitar</p>
-                                    <p className="courseDescription">
-                                        Learn to play the guitar with our expert instructors.
-                                    </p>
-                                    <a href="about.html" className="courseButton">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

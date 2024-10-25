@@ -15,10 +15,15 @@ function Banner({ route }) {
             subTitle = "Learn, Play, and Create with Meloda House";
             bannerImage = require("../images/banner-home.png");
             break;
+            case "Courses":
+            title = "Discover Your Rhythm with Meloda House";
+            subTitle = "Learn, Play, and Create with Meloda House";
+            bannerImage = require("../images/banner-courses1.jpg");
+            break;
         case "Blog":
             title = "Harmonize Your Journey, Master Your Craft";
             subTitle = "Discover Insights and Stories at Meloda House";
-            bannerImage = require("../images/banner-blog.png");
+            bannerImage = require("../images/banner-blog.jpg");
             break;
         case "Career":
             title = "Spread Your Rhythm with Meloda House.";
@@ -44,8 +49,8 @@ function Banner({ route }) {
     return (
         <div className="banner" style={{
             backgroundImage: `url(${bannerImage})`,
-            backgroundColor: (route != "Home" && route != "Courses") ? "rgba(0,0,0,0.5)" : "transparent",
-            backgroundBlendMode: (route != "Home" && route != "Courses") ? "multiply" : "unset"
+            backgroundColor: (route != "Home") ? "rgba(0,0,0,0.5)" : "transparent",
+            backgroundBlendMode: (route != "Home") ? "multiply" : "unset"
         }}>
             <div className="nav">
                 <Link to="/" className="logo">
