@@ -698,8 +698,8 @@ const Home = () => {
 
                 <div className="form" id="form">
                     <p className="title">Contact Us</p>
-                    <p className="subTitle">For further questions, including partnership opportunities, please email hello@creative-
-                        tim.com or contact using our contact form.</p>
+                    {/* <p className="subTitle">For further questions, including partnership opportunities, please email hello@creative-
+                        tim.com or contact using our contact form.</p> */}
                     <div className='inputs'>
                         <div className='nameandmails'>
                             <div className='input'>
