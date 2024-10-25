@@ -73,6 +73,36 @@ function Blog() {
                 </div>
                 <div className="blog">
                     <div className="blog-video">
+                        <YouTube videoId="PAUwdfQxaUY" opts={{
+                            height: '400',
+                            width: '500',
+                            playerVars: {
+                                // https://developers.google.com/youtube/player_parameters
+                                autoplay: 0,
+                                rel: 0,  // Prevents related videos from other channels
+                                modestbranding: 1,  // Minimizes YouTube branding
+                                showinfo: 0,  // Deprecated, but might still reduce info visibility
+                                iv_load_policy: 3,  // Hides video annotations
+                            },
+                        }} />
+                    </div>
+                    <div className="blog-texts">
+                        <p className="name">Asif Khan</p>
+                        <p className="designation">Music Teacher</p>
+                        <p className="date">17th May 2021</p>
+                        <p className="title">
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <div className="blog">
+                    <div className="blog-video">
                         <YouTube videoId="ZQHsi36JnDU" opts={{
                             height: '400',
                             width: '500',

@@ -165,11 +165,13 @@ function Trial() {
                             onChange={(e) => setCategory(e.target.value)} // Update state on change
                         >
                             <option value="none">Select</option>
-                            <option value="acousticguitar">Acoustic Guitar</option>
-                            <option value="electricguitar">Electric Guitar</option>
+                            <option value="hindustanivocal
+                            ">Hindustani Vocal</option>
+                            <option value="bollywoodvocal
+                            ">Bollywood Vocal</option>
                             <option value="piano">Piano</option>
-                            <option value="violin">Violin</option>
-                            <option value="drums">Drums</option>
+                            <option value="guitar">Guitar</option>
+                            <option value="tabla">Tabla</option>
                         </select>
                     </div>
                     <input
