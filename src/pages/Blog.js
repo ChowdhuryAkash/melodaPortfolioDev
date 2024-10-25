@@ -47,7 +47,7 @@ function Blog() {
                     <div className="blog-video">
                         <YouTube videoId="MT1-NUBFOG4" opts={{
                             height: '400',
-                            width: '500',
+                            width: isVerySmallScreen ? '300' : '500',
                             playerVars: {
                                 // https://developers.google.com/youtube/player_parameters
                                 autoplay: 0,
@@ -77,7 +77,7 @@ function Blog() {
                     <div className="blog-video">
                         <YouTube videoId="PAUwdfQxaUY" opts={{
                             height: '400',
-                            width: '500',
+                            width: isVerySmallScreen ? '300' : '500',
                             playerVars: {
                                 // https://developers.google.com/youtube/player_parameters
                                 autoplay: 0,
@@ -107,7 +107,7 @@ function Blog() {
                     <div className="blog-video">
                         <YouTube videoId="ZQHsi36JnDU" opts={{
                             height: '400',
-                            width: '500',
+                            width: isVerySmallScreen ? '300' : '500',
                             playerVars: {
                                 // https://developers.google.com/youtube/player_parameters
                                 autoplay: 0,
@@ -137,7 +137,7 @@ function Blog() {
                     <div className="blog-video">
                         <YouTube videoId="DfXD2s8IsP4" opts={{
                             height: '400',
-                            width: '500',
+                            width: isVerySmallScreen ? '300' : '500',
                             playerVars: {
                                 // https://developers.google.com/youtube/player_parameters
                                 autoplay: 0,
