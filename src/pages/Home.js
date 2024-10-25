@@ -275,7 +275,7 @@ const Home = () => {
                             {isCounterVisible && (
                                 <CountUp
                                     start={0}
-                                    end={10}
+                                    end={15}
                                     duration={2}
                                 />
                             )}
@@ -288,7 +288,7 @@ const Home = () => {
                             {isCounterVisible && (
                                 <CountUp
                                     start={0}
-                                    end={50}
+                                    end={200}
                                     duration={2}
                                 />
                             )}
@@ -301,7 +301,7 @@ const Home = () => {
                             {isCounterVisible && (
                                 <CountUp
                                     start={0}
-                                    end={200}
+                                    end={1500}
                                     duration={2}
                                 />
                             )}
@@ -610,7 +610,9 @@ const Home = () => {
                                 </div>
                                 <div className='right'>
                                     <p className='studentName'>Anmol Sharma</p>
-                                    <p className='studentLocation'>Kolkata, Westbengal, India</p>
+                                    <p className='studentLocation'>
+                                        Melbourne, Australia
+                                    </p>
                                 </div>
                             </div>
 
@@ -628,7 +630,9 @@ const Home = () => {
                                 </div>
                                 <div className='right'>
                                     <p className='studentName'>Rajshree Shrestha</p>
-                                    <p className='studentLocation'>Kolkata, Westbengal, India</p>
+                                    <p className='studentLocation'>
+                                        Washington, USA
+                                    </p>
                                 </div>
                             </div>
 
@@ -645,7 +649,9 @@ const Home = () => {
                                 </div>
                                 <div className='right'>
                                     <p className='studentName'>Sagar Chawla</p>
-                                    <p className='studentLocation'>Kolkata, Westbengal, India</p>
+                                    <p className='studentLocation'>
+                                        Vancouver, Canada
+                                    </p>
                                 </div>
                             </div>
 
@@ -662,7 +668,9 @@ const Home = () => {
                                 </div>
                                 <div className='right'>
                                     <p className='studentName'>Snehal Mayekar</p>
-                                    <p className='studentLocation'>Kolkata, Westbengal, India</p>
+                                    <p className='studentLocation'>
+                                        Pune, India
+                                    </p>
                                 </div>
                             </div>
 
