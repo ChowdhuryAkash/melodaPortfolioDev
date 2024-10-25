@@ -408,6 +408,7 @@
     color: #252F40;
     font-family: sans-serif;
     text-align: left;
+    text-wrap: wrap;
 }
 
 .course .right .courseButton {

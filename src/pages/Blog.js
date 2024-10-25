@@ -6,6 +6,8 @@ import "../css/blog.css";
 import YouTube from 'react-youtube';
 
 function Blog() {
+    
+    const isVerySmallScreen = window.matchMedia("(max-width: 480px)").matches;
     return (
         <div className="main">
             <Banner route="Blog" />
@@ -15,7 +17,7 @@ function Blog() {
                     <div className="blog-video">
                         <YouTube videoId="9mWwVztFBeU" opts={{
                             height: '400',
-                            width: '500',
+                            width: isVerySmallScreen ? '300' : '500',
                             playerVars: {
                                 // https://developers.google.com/youtube/player_parameters
                                 autoplay: 0,

@@ -572,7 +572,7 @@ const Home = () => {
                         <div className='teacher'>
                             <div className='teacherSpeech'>
                                 <p className='teacherSubject'>
-                                    Vocal
+                                    Guitar
                                 </p>
                                 <p className='teacherSpeechText'>
                                 "Meloda's unique 1:1 teaching model makes it easy to focus on student needs, and they love the personalized learning they receive. The platform itself is efficient, and the management team is always helpful and responsive. It’s a place where both students and teachers thrive, creating a perfect learning environment."nd a deep passion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
@@ -593,7 +593,7 @@ const Home = () => {
                         <div className='teacher'>
                             <div className='teacherSpeech'>
                                 <p className='teacherSubject'>
-                                    Vocal
+                                    Piano
                                 </p>
                                 <p className='teacherSpeechText'>
                                 "Meloda's unique 1:1 teaching model makes it easy to focus on student needs, and they love the personalized learning they receive. The platform itself is efficient, and the management team is always helpful and responsive. It’s a place where both students and teachers thrive, creating a perfect learning environment."nd a deep passion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
