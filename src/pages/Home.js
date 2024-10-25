@@ -381,7 +381,7 @@ const Home = () => {
                                     alt="guitar"
                                 />
                                 <div className="right">
-                                    <p className="courseName">Hindustan Vocal</p>
+                                    <p className="courseName">Hindustani Vocal</p>
                                     <p className="courseDescription">
                                         Learn to sing the Hindustani Vocal with our expert instructors.
                                     </p>
