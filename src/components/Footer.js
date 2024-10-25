@@ -83,11 +83,11 @@ function Footer() {
                             mailto:melodaofficials@gmail.com
                             '>Send E-Mail</a>
                         </li>
-                        <li className='footerMenuItem'>
+                        {/* <li className='footerMenuItem'>
                             <Link to="/Developers">Developers</Link>
-                        </li>
+                        </li> */}
                         <li className='footerMenuItem'>
-                            <a href='https://www.linkedin.com/in/akash-chowdhury-2b2330249/'>Contact with Team Lead(Developer)</a>
+                            <a href='https://www.linkedin.com/in/akash-chowdhury-2b2330249/'>Contact with Tech Team Lead(Developer)</a>
                         </li>
                         {/* <li className='footerMenuItem'>
                             <a href='index.html'>Integrations</a>
