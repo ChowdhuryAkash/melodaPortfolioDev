@@ -727,14 +727,15 @@
 
 .whatStudentsSay .student {
     width: auto;
-    max-width: 412px;
-    height: 276px;
+    max-width: 422px;
+    height: 315px;
+    max-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.10);
     margin: 20px 10px;
@@ -1374,8 +1375,10 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
         padding: 20px 0;
     }
     .whatStudentsSay .student{
-        width: 300px;
+        width: 320px;
+        height: auto;
         margin:20px auto;
+
         
     }
     .whatStudentsSay .title{        

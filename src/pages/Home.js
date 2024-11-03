@@ -449,7 +449,7 @@ const Home = () => {
                 <p className="title">Our Rising Stars</p>
                 <div className="mainRisingStars">
                     <div className="risingStar" id="star1">
-                        <YouTube videoId="X1hwVkdEQQw" opts={{
+                        <YouTube videoId="A4KlijX4Ha0" opts={{
                             height: '500',
                             width: '300',
                             playerVars: {
@@ -461,11 +461,11 @@ const Home = () => {
                                 iv_load_policy: 3,  // Hides video annotations
                             },
                         }} />
-                        <p className='starName'>John Doe</p>
-                        <p className='location'>Kolkata, Westbengal, India</p>
+                        <p className='starName'>Safina Khan</p>
+                        <p className='location'>Kolkata, India</p>
                     </div>
                     <div className="risingStar" id="star1">
-                        <YouTube videoId="S6dRFmdQW8g" opts={{
+                        <YouTube videoId="0C2B7sLaqvU" opts={{
                             height: '500',
                             width: '300',
                             playerVars: {
@@ -477,8 +477,8 @@ const Home = () => {
                                 iv_load_policy: 3,  // Hides video annotations
                             },
                         }} />
-                        <p className='starName'>John Doe</p>
-                        <p className='location'>Kolkata, Westbengal, India</p>
+                        <p className='starName'>Sagar Chawla</p>
+                        <p className='location'>Vancouver, Canada</p>
                     </div>
                     <div className="risingStar" id="star1">
                         <YouTube videoId="GMlkNi5GLO0" opts={{
@@ -494,7 +494,7 @@ const Home = () => {
                             },
                         }} />
                         <p className='starName'>John Doe</p>
-                        <p className='location'>Kolkata, Westbengal, India</p>
+                        <p className='location'>Kolkata, India</p>
                     </div>
                 </div>
             </div>
@@ -647,7 +647,8 @@ const Home = () => {
                         <div className='student'>
                             <div className='studentSpeech'>
                                 <p className='studentSpeechText'>
-                                "Meloda’s 1:1 singing lessons have transformed my voice! The personal attention I get from my teacher makes learning so effective."
+                                "Meloda has been a game-changer for me! The expert vocal faculty helped me improve my tone, pitch, and control. The personalized feedback and interactive sessions made me feel like I'm learning from the best. I've gained confidence in my singing, and I'm excited to perform on stage soon!
+                                "
                                 </p>
                             </div>
                             <div className='studentdetails'>
@@ -667,7 +668,8 @@ const Home = () => {
                         <div className='student'>
                             <div className='studentSpeech'>
                                 <p className='studentSpeechText'>
-                                "I love how my Meloda teacher adapts lessons to my pace. My singing has improved so much thanks to the personalized attention."
+                                "Learning Kathak from Samraggi Ghosh ji at Meloda has been an incredible experience! Her guidance, patience, and expertise have helped me master intricate footwork and expressions. The digital platform allows me to revisit sessions, ensuring I perfect each step.
+"
                                 </p>
                             </div>
                             <div className='studentdetails'>
@@ -686,8 +688,7 @@ const Home = () => {
                         <div className='student'>
                             <div className='studentSpeech'>
                                 <p className='studentSpeechText'>
-                                "I’ve made amazing progress with Meloda’s guitar lessons. The individualized approach really focuses on my improvement and boosts my confidence."
-                                </p>
+                                "I was struggling to find a guitar teacher who understood my style. Meloda's faculty not only understood but also helped me refine my skills. The online sessions are flexible and convenient, allowing me to learn from anywhere. I've improved significantly, and I'm now composing my own music!"                                </p>
                             </div>
                             <div className='studentdetails'>
                                 <div className='left'>
@@ -705,7 +706,8 @@ const Home = () => {
                         <div className='student'>
                             <div className='studentSpeech'>
                                 <p className='studentSpeechText'>
-                                "Meloda helped me unlock my singing potential! The personalized lessons are just what I needed to improve at my own pace."
+                                "I joined Meloda for Hindustani Vocal, but the flexibility allowed me to explore Guitar too! The faculty's enthusiasm and encouragement helped me balance both interests. Meloda's supportive community inspires me to push boundaries and explore fusion music.
+                                "
                                 </p>
                             </div>
                             <div className='studentdetails'>

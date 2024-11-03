@@ -2,6 +2,7 @@ import react from "react";
 import '../css/courses.css'
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Courses() {
     return (
@@ -11,6 +12,7 @@ function Courses() {
                 <p className="coursesPagetitle">COURSES</p>
                 <div className="coursesPagemainCourses">
                     <div className="coursesPagecoursesDevide coursesLeft">
+
                         <p className="coursesPagesubTitle">Instruments</p>
                         <div className="coursesPagecoursesList">
                             <div className="coursesPagecourse">
@@ -24,91 +26,47 @@ function Courses() {
                                     <p className="coursesPagecourseDescription">
                                         Learn to play the guitar with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
+                                    
+                                    <Link to="/trial" className="coursesPagecourseButton">
+                                    Get a trial
+                                    </Link>
                                 </div>
                             </div>
+
                             <div className="coursesPagecourse">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/piano.jpg")}
                                     className="coursesPagecourseImage"
-                                    alt="guitar"
+                                    alt="Piano"
                                 />
                                 <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
+                                    <p className="coursesPagecourseName">Piano</p>
                                     <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to play the Piano with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
+                                    <Link to="/trial" className="coursesPagecourseButton">
+                                    Get a trial
+                                    </Link>
                                 </div>
                             </div>
+
                             <div className="coursesPagecourse">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/tabla.png")}
                                     className="coursesPagecourseImage"
-                                    alt="guitar"
+                                    alt="Tabla"
                                 />
                                 <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
+                                    <p className="coursesPagecourseName">Tabla</p>
                                     <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to play the Tabla with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
+                                    <Link to="/trial" className="coursesPagecourseButton">
+                                    Get a trial
+                                    </Link>
                                 </div>
                             </div>
-                            <div className="coursesPagecourse">
-                                <img
-                                    src={require("../images/guitarCourse.png")}
-                                    className="coursesPagecourseImage"
-                                    alt="guitar"
-                                />
-                                <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
-                                    <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
-                                    </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="coursesPagecourse">
-                                <img
-                                    src={require("../images/guitarCourse.png")}
-                                    className="coursesPagecourseImage"
-                                    alt="guitar"
-                                />
-                                <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
-                                    <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
-                                    </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="coursesPagecourse">
-                                <img
-                                    src={require("../images/guitarCourse.png")}
-                                    className="coursesPagecourseImage"
-                                    alt="guitar"
-                                />
-                                <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
-                                    <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
-                                    </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="coursesPagecoursesDevide coursesRight">
@@ -116,50 +74,34 @@ function Courses() {
                         <div className="coursesPagecoursesList">
                             <div className="coursesPagecourse">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/hindustanVocal.webp")}
                                     className="coursesPagecourseImage"
                                     alt="guitar"
                                 />
                                 <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
+                                    <p className="coursesPagecourseName">Hindustani Vocal</p>
                                     <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to sing the Hindustani Vocal with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
+                                    <Link to="/trial" className="coursesPagecourseButton">
+                                    Get a trial
+                                    </Link>
                                 </div>
                             </div>
                             <div className="coursesPagecourse">
                                 <img
-                                    src={require("../images/guitarCourse.png")}
+                                    src={require("../images/bollywoodvocal.jpg")}
                                     className="coursesPagecourseImage"
                                     alt="guitar"
                                 />
                                 <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
+                                    <p className="coursesPagecourseName">Bollywood Vocal</p>
                                     <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
+                                        Learn to sing the Bollywood Vocal with our expert instructors.
                                     </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="coursesPagecourse">
-                                <img
-                                    src={require("../images/guitarCourse.png")}
-                                    className="coursesPagecourseImage"
-                                    alt="guitar"
-                                />
-                                <div className="coursesPageright">
-                                    <p className="coursesPagecourseName">Guitar</p>
-                                    <p className="coursesPagecourseDescription">
-                                        Learn to play the guitar with our expert instructors.
-                                    </p>
-                                    <a href="about.html" className="coursesPagecourseButton">
-                                        Learn More
-                                    </a>
+                                    <Link to="/trial" className="coursesPagecourseButton">
+                                    Get a trial
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -42,7 +42,7 @@
     display: flex;
     overflow-x: auto;
     /* Enable horizontal scrolling */
-    padding-bottom: 10px;
+    padding: 10px;
     white-space: nowrap;
     /* Prevent wrapping of course items */
 }
@@ -72,6 +72,7 @@
     width: 100px;
     height: 100px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .coursesPagecourses .coursesPageright {
@@ -128,6 +129,7 @@
     color: #252F40;
     font-family: sans-serif;
     text-align: left;
+    text-wrap: wrap;
 }
 
 .coursesPagecourse .coursesPageright .coursesPagecourseDescription {
