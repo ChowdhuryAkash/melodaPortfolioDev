@@ -175,6 +175,7 @@
     }
     .coursesPagecourses .coursesPagecourse {
         width: 280px;
+        height: auto;
     }
     .coursesPagecourse .coursesPageright{
         /* background: #000; */
