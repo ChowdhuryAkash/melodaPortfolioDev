@@ -12,6 +12,9 @@ import { render } from "react-dom";
 import { Dots, Spinner } from "react-activity";
 import "react-activity/dist/library.css";
 const Career = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
     const isVerySmallScreen = window.matchMedia("(max-width: 480px)").matches;
 

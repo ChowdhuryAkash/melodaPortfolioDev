@@ -1,10 +1,13 @@
-import react from "react";
+import react,{useState, useEffect} from "react";
 import '../css/courses.css'
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function Courses() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Banner route="Courses" />

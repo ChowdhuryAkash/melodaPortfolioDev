@@ -1,10 +1,13 @@
-import react from "react";
+import react,{useState, useEffect} from "react";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 
 import "../css/about.css";
 
 function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="main">
             <Banner route="About" />

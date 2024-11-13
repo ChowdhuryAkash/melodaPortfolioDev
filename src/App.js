@@ -8,7 +8,6 @@ import Blog from "./pages/Blog.js";
 import About from "./pages/About.js";
 import Trial from "./pages/Trial.js";
 import Courses from "./pages/Courses.js";
-import Course from "./pages/Course.js";
 import Termsandcondition from "./pages/Termsandcondition.js";
 import Privecyandpolicy from "./pages/Privecyandpolicy.js";
 import Developers from "./pages/Developers.js";
@@ -25,7 +24,6 @@ function App() {
         <Route path="/Support" element={<Navigate to="/#support" replace />} />
         <Route path="/Trial" element={<Trial />}></Route>
         <Route path="/Courses" element={<Courses />}></Route>
-        <Route path="/Course" element={<Course />}></Route>
         <Route path="/Termsandcondition" element={<Termsandcondition />}></Route>
         <Route path="/Privecyandpolicy" element={<Privecyandpolicy />}></Route>
         <Route path="/Developers" element={<Developers />}></Route>

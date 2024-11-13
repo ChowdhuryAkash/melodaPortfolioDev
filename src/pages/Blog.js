@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import react,{useState, useEffect} from "react";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 
@@ -7,6 +6,9 @@ import "../css/blog.css";
 import YouTube from 'react-youtube';
 
 function Blog() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [showFullText, setShowFullText] = useState(false);
 
