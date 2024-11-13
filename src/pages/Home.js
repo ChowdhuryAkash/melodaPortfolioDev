@@ -481,7 +481,7 @@ const Home = () => {
                         <p className='location'>Vancouver, Canada</p>
                     </div>
                     <div className="risingStar" id="star1">
-                        <YouTube videoId="GMlkNi5GLO0" opts={{
+                        <YouTube videoId="_8V4zqgqQrA" opts={{
                             height: '500',
                             width: '300',
                             playerVars: {
@@ -493,7 +493,7 @@ const Home = () => {
                                 iv_load_policy: 3,  // Hides video annotations
                             },
                         }} />
-                        <p className='starName'>John Doe</p>
+                        <p className='starName'>Safina Khan</p>
                         <p className='location'>Kolkata, India</p>
                     </div>
                 </div>
@@ -509,10 +509,12 @@ const Home = () => {
                         <div className='teacher'>
                             <div className='teacherSpeech'>
                                 <p className='teacherSubject'>
-                                    Vocal
+                                Indian Vocal
+
                                 </p>
                                 <p className='teacherSpeechText'>
-                                    "Meloda provides an exceptional teaching experience. The 1:1 sessions offer students personalized learning, which boosts their confidence and skills. The platform is intuitive, making lessons seamless. Students love the progress they see, and the management team is incredibly supportive, ensuring both students and teachers have a smooth journey."
+                                "Meloda has been a revelation! The platform's dedication to preserving Indian classical music and providing accessible education is truly inspiring. As a teacher, I appreciate the flexibility and interactive tools that enable me to connect with students worldwide. Meloda's commitment to quality and cultural preservation aligns with my own values, making it an ideal partnership."
+
                                 </p>
                             </div>
                             <div className='teacherdetails'>
@@ -533,7 +535,7 @@ const Home = () => {
                                     Tabla
                                 </p>
                                 <p className='teacherSpeechText'>
-                                "The quality of education on Meloda is top-notch. Students appreciate the individualized attention and rapid progress they make during 1:1 lessons. As a teacher, the platform is user-friendly, and the management team is always ready to assist, making the whole experience enjoyable for both students and teachers."ssion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
+                                "The quality of education on Meloda is top-notch. Students appreciate the individualized attention and rapid progress they make during 1:1 lessons. As a teacher, the platform is user-friendly, and the management team is always ready to assist, making the whole experience enjoyable for both students and teachers."ssion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!"
                                 </p>
                             </div>
                             <div className='teacherdetails'>
@@ -551,10 +553,11 @@ const Home = () => {
                         <div className='teacher'>
                             <div className='teacherSpeech'>
                                 <p className='teacherSubject'>
-                                    Vocal
+                                    Indian Vocal
                                 </p>
                                 <p className='teacherSpeechText'>
-                                "Meloda's unique 1:1 teaching model makes it easy to focus on student needs, and they love the personalized learning they receive. The platform itself is efficient, and the management team is always helpful and responsive. It’s a place where both students and teachers thrive, creating a perfect learning environment."nd a deep passion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
+                                "Teaching at Meloda has been a delightful experience. The platform's user-friendly interface and technical support ensure seamless lessons. I'm impressed by the students' enthusiasm and dedication, which motivates me to share my knowledge. Meloda's vision of spreading Indian classical music globally resonates deeply with me."
+
                                 </p>
                             </div>
                             <div className='teacherdetails'>
@@ -575,7 +578,8 @@ const Home = () => {
                                     Guitar
                                 </p>
                                 <p className='teacherSpeechText'>
-                                "Meloda's unique 1:1 teaching model makes it easy to focus on student needs, and they love the personalized learning they receive. The platform itself is efficient, and the management team is always helpful and responsive. It’s a place where both students and teachers thrive, creating a perfect learning environment."nd a deep passion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
+                                "Meloda's innovative approach to music education has revolutionized the way I teach guitar. The platform's interactive features and recording tools allow students to learn at their own pace. I appreciate Meloda's focus on both technical skill and artistic expression, enabling students to grow as musicians."
+
                                 </p>
                             </div>
                             <div className='teacherdetails'>
@@ -596,7 +600,7 @@ const Home = () => {
                                     Piano
                                 </p>
                                 <p className='teacherSpeechText'>
-                                "Meloda's unique 1:1 teaching model makes it easy to focus on student needs, and they love the personalized learning they receive. The platform itself is efficient, and the management team is always helpful and responsive. It’s a place where both students and teachers thrive, creating a perfect learning environment."nd a deep passion for this rich and ancient tradition. She has trained under some of the most respected gurus and brings a wealth of knowledge in ragas, talas, and the intricate nuances of Hindustani music. She will guide you with patience, expertise, and a genuine love for the music. Let's embark on this musical journey together!""
+                                "Meloda's comprehensive curriculum and expert faculty make it an ideal institution for piano students. I value the platform's emphasis on musicality, technique, and creativity. The online format enables me to reach students worldwide, sharing my passion for piano music."
                                 </p>
                             </div>
                             <div className='teacherdetails'>

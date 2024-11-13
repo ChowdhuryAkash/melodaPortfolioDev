@@ -30,7 +30,11 @@ function Footer() {
                             <Link to="/Blog">Blog</Link>
                         </li>
                         <li className='footerMenuItem'>
-                            <Link to="/Support">Support</Link>
+                        <a href='
+                            mailto:supprt.meloda@gmail.com
+                            '>
+                            Support
+                        </a>
                         </li>
                         <li className='footerMenuItem'>
                             <Link to="/Career">Career</Link>
@@ -80,7 +84,7 @@ function Footer() {
                         </li>
                         <li className='footerMenuItem'>
                             <a href='
-                            mailto:melodaofficials@gmail.com
+                            mailto:supprt.meloda@gmail.com
                             '>Send E-Mail</a>
                         </li>
                         {/* <li className='footerMenuItem'>

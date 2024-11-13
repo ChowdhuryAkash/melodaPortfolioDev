@@ -15,7 +15,7 @@ function Banner({ route }) {
             subTitle = "Learn, Play, and Create with Meloda House";
             bannerImage = require("../images/banner-home.png");
             break;
-            case "Courses":
+        case "Courses":
             title = "Discover Your Rhythm with Meloda House";
             subTitle = "Learn, Play, and Create with Meloda House";
             bannerImage = require("../images/banner-courses1.jpg");
@@ -64,13 +64,25 @@ function Banner({ route }) {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
+                        <Link to="/About">About</Link>
+                    </li>
+                    <li>
                         <Link to="/Courses">Courses</Link>
                     </li>
                     <li>
                         <Link to="/Blog">Blog</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/Support">Support</Link>
+                    </li> */}
+                    {/* link of gmail id */}
+                    
+                    <li>
+                    <a href="mailto:supprt.meloda@gmail.com"
+                    style={{
+                    }}>
+                        Support
+                    </a>
                     </li>
                     <li>
                         <Link to="/Career">Career</Link>
@@ -108,40 +120,43 @@ function Banner({ route }) {
             </div>
             {
                 showResponsiveNav ?
-                <div class="responsiveNav">
-                <div class="responsiveNavTop">
-                <Link to="/">
-                    <img src=
-                        {require("../images/white_logo.png")}
-                        id="responsiveNavLogo"
-                        alt="banner" />
-                </Link>
-                <img src={require("../images/cancel.png")} id="responsiveNavClose" alt="close" onClick={()=>{
-                    setShowResponsiveNav(false);
-                }} />
+                    <div class="responsiveNav">
+                        <div class="responsiveNavTop">
+                            <Link to="/">
+                                <img src=
+                                    {require("../images/white_logo.png")}
+                                    id="responsiveNavLogo"
+                                    alt="banner" />
+                            </Link>
+                            <img src={require("../images/cancel.png")} id="responsiveNavClose" alt="close" onClick={() => {
+                                setShowResponsiveNav(false);
+                            }} />
 
-                </div>
-                <ul class="responsiveMenu">
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/Courses">Courses</Link>
-                    </li>
-                    <li>
-                        <Link to="/Blog">Blog</Link>
-                    </li>
-                    <li>
-                        <Link to="/Support">Support</Link>
-                    </li>
-                    <li>
-                        <Link to="/Career">Career</Link>
-                    </li>
-                    <li>
-                        <Link to="/Trial" id="responsiveNavBookFreeTrialButton">Book Free Trial</Link>
-                    </li>
-                </ul>
-            </div> : null
+                        </div>
+                        <ul class="responsiveMenu">
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/About">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/Courses">Courses</Link>
+                            </li>
+                            <li>
+                                <Link to="/Blog">Blog</Link>
+                            </li>
+                            <li>
+                                <Link to="/Support">Support</Link>
+                            </li>
+                            <li>
+                                <Link to="/Career">Career</Link>
+                            </li>
+                            <li>
+                                <Link to="/Trial" id="responsiveNavBookFreeTrialButton">Book Free Trial</Link>
+                            </li>
+                        </ul>
+                    </div> : null
             }
         </div >
     )

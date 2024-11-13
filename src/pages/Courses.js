@@ -25,6 +25,7 @@ function Courses() {
                                     <p className="coursesPagecourseName">Guitar</p>
                                     <p className="coursesPagecourseDescription">
                                         Learn to play the guitar with our expert instructors.
+                                        <br/>Please book a free trial class to know more <br /> about  the course, fees structure and timings with our experts.
                                     </p>
                                     
                                     <Link to="/trial" className="coursesPagecourseButton">
@@ -43,6 +44,7 @@ function Courses() {
                                     <p className="coursesPagecourseName">Piano</p>
                                     <p className="coursesPagecourseDescription">
                                         Learn to play the Piano with our expert instructors.
+                                        <br/>Please book a free trial class to know more <br /> about  the course, fees structure and timings with our experts.
                                     </p>
                                     <Link to="/trial" className="coursesPagecourseButton">
                                     Get a trial
@@ -60,6 +62,7 @@ function Courses() {
                                     <p className="coursesPagecourseName">Tabla</p>
                                     <p className="coursesPagecourseDescription">
                                         Learn to play the Tabla with our expert instructors.
+                                        <br/>Please book a free trial class to know more <br /> about  the course, fees structure and timings with our experts.
                                     </p>
                                     <Link to="/trial" className="coursesPagecourseButton">
                                     Get a trial
@@ -82,6 +85,7 @@ function Courses() {
                                     <p className="coursesPagecourseName">Hindustani Vocal</p>
                                     <p className="coursesPagecourseDescription">
                                         Learn to sing the Hindustani Vocal with our expert instructors.
+                                        <br/>Please book a free trial class to know more <br /> about  the course, fees structure and timings with our experts.
                                     </p>
                                     <Link to="/trial" className="coursesPagecourseButton">
                                     Get a trial
@@ -98,6 +102,7 @@ function Courses() {
                                     <p className="coursesPagecourseName">Bollywood Vocal</p>
                                     <p className="coursesPagecourseDescription">
                                         Learn to sing the Bollywood Vocal with our expert instructors.
+                                        <br/>Please book a free trial class to know more <br /> about  the course, fees structure and timings with our experts.
                                     </p>
                                     <Link to="/trial" className="coursesPagecourseButton">
                                     Get a trial
